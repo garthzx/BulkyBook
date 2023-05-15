@@ -1,0 +1,35 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.success-container {
+    position: fixed;
+    z-index: 2;
+    right: -400px;
+    top: 50px;
+    width: 400px;
+    background-color: lawngreen;
+    color: #000;
+    padding: 12px;
+    font-size: 24px;
+    transition: all 1s linear;
+}
+
+.success-container.active {
+    right: 0px;
+}
